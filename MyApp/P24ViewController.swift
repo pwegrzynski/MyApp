@@ -74,6 +74,7 @@ final class P24ViewController: UIViewController, P24TransferDelegate {
     
     func p24TransferOnCanceled() {
         print("Transaction cancelled")
+        
     }
     
     func p24Transfer(onError errorCode: String!) {

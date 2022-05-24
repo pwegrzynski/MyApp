@@ -8,26 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var image: Image?
-    @State private var showingImagePicker = false
+    @State private var startTransaction = false
 
     var body: some View {
         VStack {
-            image?
-                .resizable()
-                .scaledToFit()
-
-            Button("Select Image") {
-               showingImagePicker = true
+            
+            P24View(startTransaction: $startTransaction)
+                       
+            Button(action: { startTransaction.toggle() }) {
+                if startTransaction {
+                    Text("Stop tx")
+                } else {
+                    Text("Start tx")
+                }
             }
         }
-        .sheet(isPresented: $showingImagePicker) {
-            P24View()
-        }
     }
-//        Text("Hello, world!")
-//            .padding()
-
 }
 
 struct ContentView_Previews: PreviewProvider {
