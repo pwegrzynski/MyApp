@@ -14,6 +14,10 @@
 		7D3598EC283CEDE000269584 /* MyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3598EB283CEDE000269584 /* MyAppTests.swift */; };
 		7D3598F6283CEDE000269584 /* MyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3598F5283CEDE000269584 /* MyAppUITests.swift */; };
 		7D3598F8283CEDE000269584 /* MyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3598F7283CEDE000269584 /* MyAppUITestsLaunchTests.swift */; };
+		7D359906283CEEB200269584 /* P24ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D359904283CEEB100269584 /* P24ViewController.swift */; };
+		7D359907283CEEB200269584 /* P24View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D359905283CEEB100269584 /* P24View.swift */; };
+		7D359909283CEED100269584 /* libP24.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D359908283CEED100269584 /* libP24.xcframework */; };
+		7D35990D283CFFE600269584 /* P24View2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D35990C283CFFE600269584 /* P24View2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		7D3598F1283CEDE000269584 /* MyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D3598F5283CEDE000269584 /* MyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppUITests.swift; sourceTree = "<group>"; };
 		7D3598F7283CEDE000269584 /* MyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7D359904283CEEB100269584 /* P24ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P24ViewController.swift; sourceTree = "<group>"; };
+		7D359905283CEEB100269584 /* P24View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P24View.swift; sourceTree = "<group>"; };
+		7D359908283CEED100269584 /* libP24.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libP24.xcframework; sourceTree = "<group>"; };
+		7D35990C283CFFE600269584 /* P24View2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P24View2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D359909283CEED100269584 /* libP24.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,7 @@
 		7D3598CE283CEDDF00269584 = {
 			isa = PBXGroup;
 			children = (
+				7D359908283CEED100269584 /* libP24.xcframework */,
 				7D3598D9283CEDDF00269584 /* MyApp */,
 				7D3598EA283CEDE000269584 /* MyAppTests */,
 				7D3598F4283CEDE000269584 /* MyAppUITests */,
@@ -94,10 +104,13 @@
 		7D3598D9283CEDDF00269584 /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
+				7D359905283CEEB100269584 /* P24View.swift */,
+				7D359904283CEEB100269584 /* P24ViewController.swift */,
 				7D3598DA283CEDDF00269584 /* MyAppApp.swift */,
 				7D3598DC283CEDDF00269584 /* ContentView.swift */,
 				7D3598DE283CEDE000269584 /* Assets.xcassets */,
 				7D3598E0283CEDE000269584 /* Preview Content */,
+				7D35990C283CFFE600269584 /* P24View2.swift */,
 			);
 			path = MyApp;
 			sourceTree = "<group>";
@@ -257,7 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D35990D283CFFE600269584 /* P24View2.swift in Sources */,
 				7D3598DD283CEDDF00269584 /* ContentView.swift in Sources */,
+				7D359907283CEEB200269584 /* P24View.swift in Sources */,
+				7D359906283CEEB200269584 /* P24ViewController.swift in Sources */,
 				7D3598DB283CEDDF00269584 /* MyAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
